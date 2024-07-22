@@ -1,57 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <title>Impacto de las Tecnologías Web - Contacto</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
-
-      <h1>Impacto de las Tecnologías Web en la Sociedad y los Negocios</h1>
-      <nav>
-        <a href="/index.html">Introduccion &nbsp;&nbsp;&nbsp;&nbsp;</a>
-        <a href="/Contenido/Innovación en los Modelos de Negocio.html">Innovación en los Modelos de Negocio &nbsp;&nbsp;&nbsp;&nbsp;</a>
-        <a href="/Contenido/Educación y aprendizaje en línea.html">Educación y Aprendizaje en Línea &nbsp;&nbsp;&nbsp;&nbsp;</a>
-        <a href="/Contenido/Innnovación en el entretenimiento y medios.html">Innovación en el Entretenimiento y Medios &nbsp;&nbsp;&nbsp;&nbsp;</a>
-        
-      </nav>
-      <hr />
+        <div class="header-content">
+            <h1>Impacto de las Tecnologías Web en la Sociedad y los Negocios</h1>
+            <nav>
+                <a href="/index.html"><i class="fas fa-home"></i> Introducción</a>
+                <a href="/Contenido/Innovación en los Modelos de Negocio.html"><i class="fas fa-briefcase"></i> Innovación en los Modelos de Negocio</a>
+                <a href="/Contenido/Educación y aprendizaje en línea.html"><i class="fas fa-graduation-cap"></i> Educación y Aprendizaje en Línea</a>
+                <a href="/Contenido/Innnovación en el entretenimiento y medios.html"><i class="fas fa-film"></i> Innovación en el Entretenimiento y Medios</a>
+            </nav>
+        </div>
     </header>
     
-    <div>
-        <h1>Contactame para mas informacion</h1>
-        <p></p>
-
-
-        <section>
-            <form >
-                <h5>Nombres: <input type="text"></h5>
-                <h5>Edad: <input type="number"></h5> 
-                <h5>Correo: <input type="email"></h5>
-                <h4>Detalla tu requerimiento</h5>
-                <textarea></textarea>
-
-                <div>
-                    
-            <button>Ennviar </button>
+    <main>
+        <div class="contact-form">
+            <h2><i class="fas fa-envelope"></i> Contáctame para más información</h2>
+            <form>
+                <div class="form-group">
+                    <label for="nombre">Nombres:</label>
+                    <input type="text" id="nombre" name="nombre" required>
                 </div>
-
+                <div class="form-group">
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" name="edad" required>
+                </div>
+                <div class="form-group">
+                    <label for="correo">Correo:</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+                <div class="form-group">
+                    <label for="requerimiento">Detalla tu requerimiento:</label>
+                    <textarea id="requerimiento" name="requerimiento" required></textarea>
+                </div>
+                <button type="submit"><i class="fas fa-paper-plane"></i> Enviar</button>
             </form>
-            
-        </section>
-
-
-    </div>
-    <hr>
+        </div>
+    </main>
 
     <footer>
         <address>
           Autor: David De la Torre<br>
           correo: david200102@icloud.com
         </address>
-      
+    
         <p>Última modificación: 26 de mayo de 2024</p>
       </footer>
-  </body>
+</body>
 </html>

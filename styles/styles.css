@@ -1,0 +1,483 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos para el menu */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin: 0.25rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #34495e;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ecf0f1;
+    opacity: 0.5;
+}
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+}
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+nav a:hover {
+    animation: pulse 0.5s ease-in-out;
+}
+
+/* Estilos para el formulario de contacto */
+.contact-form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+form h5 {
+    margin-bottom: 0.5rem;
+    color: #34495e;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+form button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #2980b9;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 1.5rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+footer address {
+    margin-bottom: 1rem;
+    font-style: normal;
+}
+
+footer p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #bdc3c7;
+    margin: 2rem 0;
+}
+
+.content-container {
+    display: flex;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.main-content {
+    flex: 2;
+}
+
+.intro-video {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.intro-text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.sidebar {
+    flex: 1;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-item {
+    margin-bottom: 30px;
+}
+
+.sidebar-title {
+    font-size: 20px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.sidebar-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.sidebar-text {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.sidebar-link {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.sidebar-link:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        margin-top: 30px;
+    }
+}
+
+.content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.section-nav {
+    background: linear-gradient(45deg, #2c3e50, #34495e);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    position: sticky;
+    top: 20px; /* Ajusta este valor según necesites */
+    max-height: calc(100vh - 40px); /* Altura máxima del viewport menos el margen superior e inferior */
+    overflow-y: auto; /* Permite scroll dentro del nav si el contenido es muy largo */
+}
+
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nav-link {
+    color: #ecf0f1;
+    text-decoration: none;
+    display: block;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.nav-link:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgba(236, 240, 241, 0.1);
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+
+.nav-link:hover {
+    color: #3498db;
+    transform: translateX(5px);
+}
+
+.nav-link:hover:before {
+    width: 100%;
+}
+
+
+
+@media (max-width: 768px) {
+    .section-nav {
+        position: static;
+        border-radius: 0;
+    }
+
+    .nav-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-link {
+        padding: 10px 15px;
+        font-size: 0.9em;
+    }
+}
+
+@media (min-width: 769px) {
+    .section-nav {
+        max-width: 300px;
+        margin-right: 30px;
+    }
+
+    .content-wrapper {
+        display: flex;
+    }
+
+    .main-content {
+        flex: 1;
+    }
+}
+
+/* Estilos adicionales para mejorar la interactividad */
+.nav-link:active {
+    transform: scale(0.95);
+}
+
+.nav-link::after {
+    content: '→';
+    position: absolute;
+    right: 20px;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover::after {
+    opacity: 1;
+    transform: translateX(5px);
+}
+
+.main-content {
+    margin-top: 30px;
+}
+
+.content-section {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+.section-title {
+    color: #2c3e50;
+    font-size: 1.8em;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.section-image {
+    align-items: center;
+    width: 35%;
+    height: auto;
+    border-radius: 8px;
+    margin: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section-text {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.subsection-title {
+    color: #34495e;
+    font-size: 1.4em;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.example-list {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.example-list li {
+    margin-bottom: 8px;
+}
+
+.impact-title {
+    color: #e74c3c;
+    font-size: 1.2em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.impact-text {
+    font-style: italic;
+    line-height: 1.6;
+}
+
+.terminology-section {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    margin-top: 30px;
+}
+
+.terminology-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.table-title {
+    color: #2c3e50;
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.terminology-table th,
+.terminology-table td {
+    border: 1px solid #e0e0e0;
+    padding: 12px;
+    text-align: left;
+}
+
+.terminology-table th {
+    background-color: #f0f4f8;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.terminology-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.terminology-table tr:hover {
+    background-color: #f0f4f8;
+}
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        padding: 10px;
+    }
+
+
+    .content-section {
+        padding: 15px;
+    }
+
+    .section-title {
+        font-size: 1.5em;
+    }
+
+    .terminology-table th,
+    .terminology-table td {
+        padding: 8px;
+    }
+}

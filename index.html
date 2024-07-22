@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tecnologías Web</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   </head>
   <body>
     <header>
@@ -20,62 +22,65 @@
         >
         <a href="/Contenido/Contacto.html">Contacto</a>
       </nav>
-      <hr>
     </header>
-    <div>
-      <video
-        src="videos/Introduccion.mp4"
-        width="450"
-        height="200"
-        controls
-      ></video>
-      <p>
-        La tecnología ha revolucionado el sector logístico, mejorando
-        significativamente la calidad de los servicios. Muchas empresas han
-        adoptado herramientas tecnológicas avanzadas para optimizar procesos
-        como el embalaje, el almacenamiento y la distribución de productos.
-        Estas innovaciones no solo permiten a las organizaciones diferenciarse
-        en el mercado, sino que también incrementan su competitividad y
-        proporcionan una experiencia de marca superior a sus clientes.
-      </p>
-      <aside>
-        <ul>
-          <li>
-            <h2>La Web</h2>
+    <div class="content-container">
+      <div class="main-content">
+        <video
+          class="intro-video"
+          src="videos/Introduccion.mp4"
+          width="450"
+          height="200"
+          controls
+        ></video>
+        <p class="intro-text">
+          La tecnología ha revolucionado el sector logístico, mejorando
+          significativamente la calidad de los servicios. Muchas empresas han
+          adoptado herramientas tecnológicas avanzadas para optimizar procesos
+          como el embalaje, el almacenamiento y la distribución de productos.
+          Estas innovaciones no solo permiten a las organizaciones diferenciarse
+          en el mercado, sino que también incrementan su competitividad y
+          proporcionan una experiencia de marca superior a sus clientes.
+        </p>
+      </div>
+      <aside class="sidebar">
+        <ul class="sidebar-list">
+          <li class="sidebar-item">
+            <h2 class="sidebar-title">La Web</h2>
             <img
+              class="sidebar-image"
               src="https://neubox.com/blog/wp-content/uploads/2023/02/1-1-1536x788.webp"
               alt="Web"
               width="350"
               height="150"
             >
-            <p>
+            <p class="sidebar-text">
               La Web, también conocida como World Wide Web (gran telaraña
-              mundial) o simplemente “la web”
+              mundial) o simplemente "la web"
             </p>
-            <a href="https://www.significados.com/web/" target="_blank">
+            <a class="sidebar-link" href="https://www.significados.com/web/" target="_blank">
               (Conocer más)Link</a
             >
           </li>
-          <li>
-            <h2>Servidores</h2>
+          <li class="sidebar-item">
+            <h2 class="sidebar-title">Servidores</h2>
             <img
+              class="sidebar-image"
               src="https://concepto.de/wp-content/uploads/2019/04/servidor-web-e1555874258468.jpg"
               alt="Servidores"
               width="350"
               height="150"
             >
-            <p>
+            <p class="sidebar-text">
               Un servidor web o servidor HTTP es un programa informático que
               procesa una aplicación del lado del servidor
             </p>
-            <a href="https://concepto.de/servidor-web/" target="_blank"
+            <a class="sidebar-link" href="https://concepto.de/servidor-web/" target="_blank"
               >(Conocer más)Link</a
             >
           </li>
         </ul>
       </aside>
     </div>
-    <hr>
     <footer>
       <address>
         Autor: David De la Torre<br>
